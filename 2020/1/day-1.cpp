@@ -23,7 +23,7 @@ int findSecondSum(int targetSum, vector<int> &list){
 
 int main () {
     ifstream input;
-    input.open("day-1-input.txt");
+    input.open("input.txt");
     if (!input) {
         cout << "No input found";
         exit(1);
