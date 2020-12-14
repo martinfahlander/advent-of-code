@@ -19,7 +19,7 @@ int main () {
         exit(1);
     }
     int activeRow = 0;
-    long path1Encounters = 0, path2Encounters = 0, path3Encounters = 0, path4Encounters = 0, path5Encounters = 0;
+    long long path1Encounters = 0, path2Encounters = 0, path3Encounters = 0, path4Encounters = 0, path5Encounters = 0;
     while (!input.eof()){
         string line = "";
         getline(input, line);
@@ -39,5 +39,7 @@ int main () {
 	}
     input.close();
     cout << "Part One: " << path2Encounters << "\nPart Two: " << path1Encounters << " " << path2Encounters << " " << path3Encounters << " " << path4Encounters << " " << path5Encounters;
+    long long total = path1Encounters * path2Encounters * path3Encounters * path4Encounters * path5Encounters;
+    cout  << endl << total;
     return 0;
 }
