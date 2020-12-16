@@ -13,9 +13,8 @@ int countValidPassports(vector <string> &passportVector){
             passportVector[i].find("hgt:") != string::npos && 
             passportVector[i].find("hcl:") != string::npos &&
             passportVector[i].find("ecl:") != string::npos && 
-            passportVector[i].find("pid:") != string::npos ){
+            passportVector[i].find("pid:") != string::npos )
             validCount++;
-        }
     }
     return validCount;
 }
